@@ -1,16 +1,19 @@
-export const FriendList = ({ items }) => {
+import PropTypes from 'prop-types';
+
+export const FriendList = ({ friends }) => {
   return (
-    <li className="item">
-      <span className="status"></span>
-      <img className="avatar" src="" alt="User avatar" width="48" />
-      <p className="name">{f.name}</p>
-    </li>
+    <ul>
+      {friends.map(friend => (
+        <li className="item" key={friend.id}>
+          <span className="status"></span>
+          <img className="avatar" src="" alt="User avatar" width="48" />
+          <p className="name">{friend.name}</p>
+        </li>
+      ))}
+    </ul>
   );
 };
 
-const f = {
-  avatar: 'https://cdn-icons-png.flaticon.com/512/1998/1998592.png',
-  name: 'Mango',
-  isOnline: true,
-  id: 1812,
+FriendList.propTypes = {
+  name: PropTypes.string.isRequired,
 };
