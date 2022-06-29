@@ -1,28 +1,28 @@
 import PropTypes from 'prop-types';
-import styled from './Profile.module.css';
+import stayles from './Profile.module.css';
 export const Profile = ({ avatar, tag, username, location, stats }) => {
   const { followers, views, likes } = stats;
   return (
-    <div className={styled.profile}>
-      <div className={styled.description}>
-        <img className={styled.avatar} src={avatar} alt={tag} />
-        <p className={styled.name}>{username}</p>
-        <p className={styled.tag}>@{tag}</p>
-        <p className={styled.location}>{location}</p>
+    <div className={stayles.profile}>
+      <div className={stayles.description}>
+        <img className={stayles.avatar} src={avatar} alt={tag} />
+        <p className={stayles.name}>{username}</p>
+        <p className={stayles.tag}>@{tag}</p>
+        <p className={stayles.location}>{location}</p>
       </div>
 
-      <ul className={styled.stats}>
+      <ul className={stayles.stats}>
         <li>
-          <span className={styled.textLabel}>Followers</span>
-          <span className={styled.quantity}>{followers}</span>
+          <span className={stayles.textLabel}>Followers</span>
+          <span className={stayles.quantity}>{followers}</span>
         </li>
         <li>
-          <span className={styled.textLabel}>Views</span>
-          <span className={styled.quantity}>{views}</span>
+          <span className={stayles.textLabel}>Views</span>
+          <span className={stayles.quantity}>{views}</span>
         </li>
         <li>
-          <span className={styled.textLabel}>Likes</span>
-          <span className={styled.quantity}>{likes}</span>
+          <span className={stayles.textLabel}>Likes</span>
+          <span className={stayles.quantity}>{likes}</span>
         </li>
       </ul>
     </div>

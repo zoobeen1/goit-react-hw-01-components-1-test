@@ -1,9 +1,6 @@
 .listItem {
-  max-width: 350px;
-  display: flex;
-  flex-flow: column wrap;
-  margin-left: auto;
-  margin-right: auto;
+  width: 305px;
+  margin: 40px auto 0 auto;
 }
 
 .status {
@@ -21,10 +18,22 @@
   padding: 15px;
   justify-content: flex-start;
   align-items: center;
+  background-color: rgb(246, 246, 246);
   border: 1px solid #000000;
   border-radius: 10px;
+  box-shadow: 6px 3px 3px gray;
 }
 
 .item:not(:last-child) {
-  margin-bottom: 30px;
+  margin-bottom: 10px;
+}
+
+.text {
+  font-size: 32px;
+  color: #000000;
+}
+
+.image {
+  display: block;
+  margin-right: 30px;
 }
