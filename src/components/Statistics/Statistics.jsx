@@ -2,6 +2,7 @@ import styles from './Statistics.module.css';
 import PropTypes from 'prop-types';
 
 export const Statistics = ({ title, stats }) => {
+  
   return (
     <section className={styles.statistics}>
       {title && <h2 className={styles.title}>{title}</h2>}
